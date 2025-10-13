@@ -25,6 +25,7 @@ return require('packer').startup(function(use)
 
     -- CORRECTO: Cada plugin en su propia línea 'use'
     -- LSP (Language Server Protocol)
+    
     use 'neovim/nvim-lspconfig' -- Base LSP configuration
     use 'williamboman/mason.nvim' -- Installs LSPs
     use {
@@ -35,14 +36,19 @@ return require('packer').startup(function(use)
         'williamboman/mason.nvim',
          },
     }
-      -- Autocompletado
-    use 'hrsh7th/cmp-nvim-lsp'
+
+    -- Autocompletado
+    
+    use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-path'
+    
     -- Corregido el error de tipeo en el nombre de usuario
+
     use 'L3MON4D3/LuaSnip'
 
     -- Linting y formateo
     use 'jose-elias-alvarez/null-ls.nvim'
+    use 'jayp0521/mason-null-ls.nvim'
 
     -- Resaltado de sintaxis avanzado
     use {

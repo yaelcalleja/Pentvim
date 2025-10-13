@@ -13,3 +13,4 @@ lualine.setup({
         extensions = {'neo-tree', 'lazy'},
     }
 })
+

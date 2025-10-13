@@ -9,6 +9,7 @@ map('n', '<leader>d', '<C-w>l', {desc = 'Moverse a la ventana de la derecha'})
 map('n', '<leader>s', '<C-w>j', {desc = 'Moverse a la ventana de abajo'})
 map('n', '<leader>a', '<C-W>a', {desc = 'Moverse a la ventana de la izquierda'})
 
+
 --Guardando la sesion con ctr + s
 map({'n', 'i', 'v'}, '<C-s>', '<cmd>w<CR>', { noremap = true, silent = true, desc = 'Guardar archivo' })
 
