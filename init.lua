@@ -2,6 +2,7 @@
 
 require('badger.settings')
 require('badger.keymaps')
+require('badger.diagnostics')
 require('badger.packer')
 
 --Load the conf for the plugins
@@ -10,3 +11,5 @@ require('plugins.cmp')
 require('plugins.null-ls')
 require('plugins.lualine')
 require('plugins.treesitter')
+require('plugins.telescope')
+require('plugins.neo-tree')

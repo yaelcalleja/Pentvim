@@ -49,5 +49,29 @@ return require('packer').startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
+    -- File exporer desde el lateral de la pantalla
+    
+    --Requerimientos de los pluggins para funcionar
+    use 'nvim-lua/plenary.nvim'
+    use 'MunifTanjim/nui.nvim'
 
+    -- Telescope
+
+    use {
+        'nvim-telescope/telescope.nvim',
+        tag = '0.1.x',
+        requires = {{'nvim-lua/plenary.nvim'}},
+        'nvim-telescope/telescope-fzf-native.nvim',
+        run = 'make'
+    }
+    --Neo-Tree
+    use {
+        'nvim-neo-tree/neo-tree.nvim',
+        branch = 'v3.x',
+        requires = {
+            'nvim-lua/plenary.nvim',
+            'nvim-tree/nvim-web-devicons',
+            'MunifTanjim/nui.nvim',
+        }
+    }
 end)
