@@ -36,7 +36,7 @@ local function ToggleTerminal()
     vim.api.nvim_win_close(term_wins[1], false)
   else
     -- Si la ventana no existe, la creamos de nuevo.
-    vim.cmd('belowright 17split | terminal')
+    vim.cmd('belowright 10split | terminal')
     terminal_buf = vim.api.nvim_get_current_buf() -- Guardamos el buffer de la nueva terminal.
 
     -- (Opcional pero recomendado) Mapeo para salir de la terminal con ESC.
