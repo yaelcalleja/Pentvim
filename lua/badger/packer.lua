@@ -36,27 +36,25 @@ return require('packer').startup(function(use)
         'williamboman/mason.nvim',
          },
     }
-
-    -- Autocompletado
-    
-    use 'hrsh7th/nvim-cmp'
-    use 'hrsh7th/cmp-path'
-    
-    -- Corregido el error de tipeo en el nombre de usuario
-
-    use 'L3MON4D3/LuaSnip'
+    use {
+        'hrsh7th/nvim-cmp',
+        requires = {
+            'hrsh7th/cmp-nvim-lsp', -- Source for LSP completions
+            'hrsh7th/cmp-buffer',   -- Source for buffer completions
+            'hrsh7th/cmp-path',     -- Source for path completions
+            'L3MON4D3/LuaSnip',     -- Snippet engine
+            'saadparwaiz1/cmp_luasnip', -- Source for snippet completions
+        },
+    }
 
     -- Linting y formateo
-    use 'jose-elias-alvarez/null-ls.nvim'
-    use 'jayp0521/mason-null-ls.nvim'
-
+    use 'nvimtools/none-ls.nvim'
     -- Resaltado de sintaxis avanzado
     use {
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
-    -- File exporer desde el lateral de la pantalla
-    
+    -- File exporer desde el lateral de la pantalla    
     --Requerimientos de los pluggins para funcionar
     use 'nvim-lua/plenary.nvim'
     use 'MunifTanjim/nui.nvim'
@@ -104,8 +102,12 @@ return require('packer').startup(function(use)
         dashboard.section.buttons.val = {
             dashboard.button("n", " Nuevo archivo", ":enew<CR>"),
             dashboard.button("s", "  Buscar un archivo", ":Telescope find_files<CR>"),
-            dashboard.button("c", "󰄴  Sincronizar plug-ins", ":PackerSync<CR>"),
+            dashboard.button("S", "󰄴  Sincronizar plug-ins", ":PackerSync<CR>"),
             dashboard.button("m", "  Mason para lenguajes de programacion", ":Mason<CR>"),
+            dashboard.button("g", "󰊢  Ver cambios de Git", ":Telescope git_status<CR>"),
+            dashboard.button("c", "⚙️  Editar configuración", ":e $MYVIMRC<CR>"),
+            dashboard.button("t", "  Buscar texto en proyecto", ":Telescope live_grep<CR>"),
+            dashboard.button("Space + e", "󰥩 File explorer"),
             dashboard.button("q", "󰈆  Salir", ":qa<CR>"),
         }
         dashboard.section.buttons.opts.hl = 'Function'
