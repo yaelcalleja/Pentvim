@@ -62,8 +62,11 @@ map({'n', 'i'}, '<C-/>', ToggleTerminal, {
 })
 
 --Quitar la sesion con " " q + q
+
 map('n', '<leader>qq', '<cmd>q<CR>')
 
+--Cerrar todas las sesiones
+map('n', '<leader>qa', '<cmd>qa<CR>')
 
 --Manjeo de telescope
 local builtin = require('telescope.builtin')

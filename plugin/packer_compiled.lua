@@ -79,14 +79,12 @@ _G.packer_plugins = {
     path = "/home/otter/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-
-  ["cmp-nvim-lsp"] = {
+  ["alpha-nvim"] = {
+    config = { "\27LJ\2\n�\19\0\0\t\0&\1g6\0\0\0'\2\1\0B\0\2\0026\1\0\0'\3\2\0B\1\2\0029\2\3\0019\2\4\0025\3\6\0=\3\5\0029\2\3\0019\2\4\0029\2\a\2'\3\t\0=\3\b\0029\2\3\0019\2\n\0024\3\6\0009\4\v\1'\6\f\0'\a\r\0'\b\14\0B\4\4\2>\4\1\0039\4\v\1'\6\15\0'\a\16\0'\b\17\0B\4\4\2>\4\2\0039\4\v\1'\6\18\0'\a\19\0'\b\20\0B\4\4\2>\4\3\0039\4\v\1'\6\21\0'\a\22\0'\b\23\0B\4\4\2>\4\4\0039\4\v\1'\6\24\0'\a\25\0'\b\26\0B\4\4\0?\4\0\0=\3\5\0029\2\3\0019\2\n\0029\2\a\2'\3\27\0=\3\b\0029\2\3\0019\2\28\0025\3\29\0=\3\5\0029\2\3\0019\2\28\0029\2\a\2'\3\30\0=\3\b\0024\2\6\0005\3 \0009\4\3\0019\4\4\0049\4\5\4=\4\5\0039\4\3\0019\4\4\0049\4\a\4=\4\a\3>\3\1\0025\3!\0>\3\2\0025\3\"\0009\4\3\0019\4\n\0049\4\5\4=\4\5\0039\4\3\0019\4\n\0049\4\a\4=\4\a\3>\3\3\0025\3#\0>\3\4\0025\3$\0009\4\3\0019\4\28\0049\4\5\4=\4\5\0039\4\3\0019\4\28\0049\4\a\4=\4\a\3>\3\5\2=\2\31\0019\2%\0009\4\a\1B\2\2\1K\0\1\0\nsetup\1\0\3\topts\0\bval\0\ttype\vfooter\1\0\2\bval\3\5\ttype\fpadding\1\0\3\topts\0\bval\0\ttype\fbuttons\1\0\2\bval\3\2\ttype\fpadding\1\0\3\topts\0\bval\0\ttype\vheader\vlayout\fComment\1\4\0\0@🕉️ Sabiduría: Visión correcta, pensamiento correcto.JConducta ética: Habla correcta, acción correcta, sustento correcto._Disciplina mental: Esfuerzo correcto, atención correcta, concentración correcta. 🕉️\vfooter\rFunction\f:qa<CR>\16󰈆  Salir\6q\15:Mason<CR>.  Mason para lenguajes de programacion\6m\20:PackerSync<CR>\31󰄴  Sincronizar plug-ins\6c\30:Telescope find_files<CR>\27  Buscar un archivo\6s\14:enew<CR>\22 Nuevo archivo\6n\vbutton\fbuttons\vString\ahl\topts\1\t\0\0�\1  ▄███████▄    ▄████████ ███▄▄▄▄         ███     ▄█    █▄   ▄█     ▄▄▄▄███▄▄▄▄    �\1  ███    ███   ███    ███ ███▀▀▀██▄  ▀█████████▄ ███    ███ ███   ▄██▀▀▀███▀▀▀██▄ �\1  ███    ███   ███    █▀  ███   ███     ▀███▀▀██ ███    ███ ███▌ ███    ███   ███ �\1  ███    ███  ▄███▄▄▄     ███   ███      ███   ▀ ███    ███ ███▌ ███    ███   ███ �\1▀█████████▀  ▀▀███▀▀▀     ███   ███      ███     ███    ███ ███▌ ███    ███   ███ �\1  ███          ███    █▄  ███   ███      ███     ███    ███ ███  ███    ███   ███ �\1  ███          ███    ███ ███   ███      ███     ███    ███ ███  ███    ███   ███ �\1 ▄████▀         ██████████  ▀█   █▀     ▄████▀     ▀██████▀  █▀    ▀█    ███   █▀  \bval\vheader\fsection\27alpha.themes.dashboard\nalpha\frequire\v����\4\0" },
     loaded = true,
-    path = "/home/otter/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
-    url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+    path = "/home/otter/.local/share/nvim/site/pack/packer/start/alpha-nvim",
+    url = "https://github.com/goolord/alpha-nvim"
   },
-
-
   ["cmp-path"] = {
     loaded = true,
     path = "/home/otter/.local/share/nvim/site/pack/packer/start/cmp-path",
@@ -97,7 +95,6 @@ _G.packer_plugins = {
     path = "/home/otter/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
-
   ["mason-lspconfig.nvim"] = {
     loaded = true,
     path = "/home/otter/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
@@ -107,48 +104,38 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/otter/.local/share/nvim/site/pack/packer/start/mason-null-ls.nvim",
     url = "https://github.com/jayp0521/mason-null-ls.nvim"
-
   },
   ["mason.nvim"] = {
     loaded = true,
     path = "/home/otter/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-
   ["neo-tree.nvim"] = {
     loaded = true,
     path = "/home/otter/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
     url = "https://github.com/nvim-neo-tree/neo-tree.nvim"
   },
-
-
   nightfox = {
     config = { "\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme nordfox\bcmd\bvim\0" },
     loaded = true,
     path = "/home/otter/.local/share/nvim/site/pack/packer/start/nightfox",
     url = "https://github.com/EdenEast/nightfox.nvim"
   },
-
   ["nui.nvim"] = {
     loaded = true,
     path = "/home/otter/.local/share/nvim/site/pack/packer/start/nui.nvim",
     url = "https://github.com/MunifTanjim/nui.nvim"
   },
-
-
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/home/otter/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
     url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
-
-
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/otter/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
-
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/otter/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -169,7 +156,6 @@ _G.packer_plugins = {
     path = "/home/otter/.local/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
-
   ["plenary.nvim"] = {
     loaded = true,
     path = "/home/otter/.local/share/nvim/site/pack/packer/start/plenary.nvim",
@@ -192,6 +178,10 @@ time([[Defining packer_plugins]], false)
 time([[Config for nightfox]], true)
 try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\24colorscheme nordfox\bcmd\bvim\0", "config", "nightfox")
 time([[Config for nightfox]], false)
+-- Config for: alpha-nvim
+time([[Config for alpha-nvim]], true)
+try_loadstring("\27LJ\2\n�\19\0\0\t\0&\1g6\0\0\0'\2\1\0B\0\2\0026\1\0\0'\3\2\0B\1\2\0029\2\3\0019\2\4\0025\3\6\0=\3\5\0029\2\3\0019\2\4\0029\2\a\2'\3\t\0=\3\b\0029\2\3\0019\2\n\0024\3\6\0009\4\v\1'\6\f\0'\a\r\0'\b\14\0B\4\4\2>\4\1\0039\4\v\1'\6\15\0'\a\16\0'\b\17\0B\4\4\2>\4\2\0039\4\v\1'\6\18\0'\a\19\0'\b\20\0B\4\4\2>\4\3\0039\4\v\1'\6\21\0'\a\22\0'\b\23\0B\4\4\2>\4\4\0039\4\v\1'\6\24\0'\a\25\0'\b\26\0B\4\4\0?\4\0\0=\3\5\0029\2\3\0019\2\n\0029\2\a\2'\3\27\0=\3\b\0029\2\3\0019\2\28\0025\3\29\0=\3\5\0029\2\3\0019\2\28\0029\2\a\2'\3\30\0=\3\b\0024\2\6\0005\3 \0009\4\3\0019\4\4\0049\4\5\4=\4\5\0039\4\3\0019\4\4\0049\4\a\4=\4\a\3>\3\1\0025\3!\0>\3\2\0025\3\"\0009\4\3\0019\4\n\0049\4\5\4=\4\5\0039\4\3\0019\4\n\0049\4\a\4=\4\a\3>\3\3\0025\3#\0>\3\4\0025\3$\0009\4\3\0019\4\28\0049\4\5\4=\4\5\0039\4\3\0019\4\28\0049\4\a\4=\4\a\3>\3\5\2=\2\31\0019\2%\0009\4\a\1B\2\2\1K\0\1\0\nsetup\1\0\3\topts\0\bval\0\ttype\vfooter\1\0\2\bval\3\5\ttype\fpadding\1\0\3\topts\0\bval\0\ttype\fbuttons\1\0\2\bval\3\2\ttype\fpadding\1\0\3\topts\0\bval\0\ttype\vheader\vlayout\fComment\1\4\0\0@🕉️ Sabiduría: Visión correcta, pensamiento correcto.JConducta ética: Habla correcta, acción correcta, sustento correcto._Disciplina mental: Esfuerzo correcto, atención correcta, concentración correcta. 🕉️\vfooter\rFunction\f:qa<CR>\16󰈆  Salir\6q\15:Mason<CR>.  Mason para lenguajes de programacion\6m\20:PackerSync<CR>\31󰄴  Sincronizar plug-ins\6c\30:Telescope find_files<CR>\27  Buscar un archivo\6s\14:enew<CR>\22 Nuevo archivo\6n\vbutton\fbuttons\vString\ahl\topts\1\t\0\0�\1  ▄███████▄    ▄████████ ███▄▄▄▄         ███     ▄█    █▄   ▄█     ▄▄▄▄███▄▄▄▄    �\1  ███    ███   ███    ███ ███▀▀▀██▄  ▀█████████▄ ███    ███ ███   ▄██▀▀▀███▀▀▀██▄ �\1  ███    ███   ███    █▀  ███   ███     ▀███▀▀██ ███    ███ ███▌ ███    ███   ███ �\1  ███    ███  ▄███▄▄▄     ███   ███      ███   ▀ ███    ███ ███▌ ███    ███   ███ �\1▀█████████▀  ▀▀███▀▀▀     ███   ███      ███     ███    ███ ███▌ ███    ███   ███ �\1  ███          ███    █▄  ███   ███      ███     ███    ███ ███  ███    ███   ███ �\1  ███          ███    ███ ███   ███      ███     ███    ███ ███  ███    ███   ███ �\1 ▄████▀         ██████████  ▀█   █▀     ▄████▀     ▀██████▀  █▀    ▀█    ███   █▀  \bval\vheader\fsection\27alpha.themes.dashboard\nalpha\frequire\v����\4\0", "config", "alpha-nvim")
+time([[Config for alpha-nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
