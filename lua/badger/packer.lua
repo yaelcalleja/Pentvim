@@ -24,8 +24,7 @@ return require('packer').startup(function(use)
     }
 
     -- CORRECTO: Cada plugin en su propia línea 'use'
-    -- LSP (Language Server Protocol)
-    
+    -- LSP (Language Server Protocol)    
     use 'neovim/nvim-lspconfig' -- Base LSP configuration
     use 'williamboman/mason.nvim' -- Installs LSPs
     use {
@@ -46,6 +45,10 @@ return require('packer').startup(function(use)
             'saadparwaiz1/cmp_luasnip', -- Source for snippet completions
         },
     }
+
+    --Autocompletado de pares
+
+    use 'windwp/nvim-autopairs'
 
     -- Linting y formateo
     use 'nvimtools/none-ls.nvim'
