@@ -82,41 +82,41 @@ return require('packer').startup(function(use)
         }
     }
     --Alpha-nvim para la pantalla de inicio
-    use {
+use {
     'goolord/alpha-nvim',
     config = function ()
         local alpha = require('alpha')
         local dashboard = require('alpha.themes.dashboard')
 
-        -- Titulo del nvim (¡Esto ya estaba perfecto!)
+        -- Titulo del nvim
         dashboard.section.header.val = {
-            '  ▄███████▄    ▄████████ ███▄▄▄▄         ███     ▄█    █▄   ▄█     ▄▄▄▄███▄▄▄▄    ',
-            '  ███    ███   ███    ███ ███▀▀▀██▄  ▀█████████▄ ███    ███ ███   ▄██▀▀▀███▀▀▀██▄ ',
-            '  ███    ███   ███    █▀  ███   ███     ▀███▀▀██ ███    ███ ███▌ ███    ███   ███ ',
-            '  ███    ███  ▄███▄▄▄     ███   ███      ███   ▀ ███    ███ ███▌ ███    ███   ███ ',
-            '▀█████████▀  ▀▀███▀▀▀     ███   ███      ███     ███    ███ ███▌ ███    ███   ███ ',
-            '  ███          ███    █▄  ███   ███      ███     ███    ███ ███  ███    ███   ███ ',
-            '  ███          ███    ███ ███   ███      ███     ███    ███ ███  ███    ███   ███ ',
-            ' ▄████▀         ██████████  ▀█   █▀     ▄████▀     ▀██████▀  █▀    ▀█    ███   █▀  ',
+           '  ▄███████▄    ▄████████ ███▄▄▄▄        ███     ▄█    █▄   ▄█      ▄▄▄▄███▄▄▄▄    ',
+             '  ███    ███   ███    ███ ███▀▀▀██▄   ▀█████████▄ ███    ███ ███   ▄██▀▀▀███▀▀▀██▄ ',
+             '  ███    ███   ███    █▀  ███   ███     ▀███▀▀██ ███    ███ ███▌ ███    ███   ███ ',
+            '  ███    ███  ▄███▄▄▄     ███   ███       ███   ▀ ███    ███ ███▌ ███    ███   ███ ',
+            '▀█████████▀  ▀▀███▀▀▀     ███   ███       ███     ███    ███ ███▌ ███    ███   ███ ',
+             '  ███          ███    █▄  ███   ███       ███     ███    ███ ███  ███    ███   ███ ',
+            '  ███          ███    ███ ███   ███       ███     ███    ███ ███  ███    ███   ███ ',
+            ' ▄████▀         ██████████  ▀█   █▀       ▄████▀     ▀██████▀  █▀     ▀█    ███   █▀  ',
+            '                                                                          By Badger.',
         }
         dashboard.section.header.opts.hl = 'String'
 
-        -- Botones que usaremos en la pantalla de inicio
+        -- Botones
         dashboard.section.buttons.val = {
             dashboard.button("n", " Nuevo archivo", ":enew<CR>"),
             dashboard.button("s", "  Buscar un archivo", ":Telescope find_files<CR>"),
             dashboard.button("S", "󰄴  Sincronizar plug-ins", ":PackerSync<CR>"),
             dashboard.button("m", "  Mason para lenguajes de programacion", ":Mason<CR>"),
             dashboard.button("g", "󰊢  Ver cambios de Git", ":Telescope git_status<CR>"),
-            dashboard.button("c", "⚙️  Editar configuración", ":e $MYVIMRC<CR>"),
-            dashboard.button("t", "  Buscar texto en proyecto", ":Telescope live_grep<CR>"),
+            dashboard.button("c", "⚙️   Editar configuración", ":e $MYVIMRC<CR>"),
+            dashboard.button("t", "   Buscar texto en proyecto", ":Telescope live_grep<CR>"),
             dashboard.button("Space + e", "󰥩 File explorer"),
             dashboard.button("q", "󰈆  Salir", ":qa<CR>"),
         }
         dashboard.section.buttons.opts.hl = 'Function'
 
-        -- PIE DE PÁGINA
-
+        -- Pie de página
         dashboard.section.footer.val = {
             '🕉️ Sabiduría: Visión correcta, pensamiento correcto.',
             'Conducta ética: Habla correcta, acción correcta, sustento correcto.',
@@ -124,14 +124,20 @@ return require('packer').startup(function(use)
         }
         dashboard.section.footer.opts.hl = 'Comment'
 
-        --Layout
+        -- Layout
         dashboard.layout = {
-                {type = "header", val = dashboard.section.header.val, opts = dashboard.section.header.opts},
-                {type = "padding", val = 2},
-                {type = "buttons", val = dashboard.section.buttons.val, opts = dashboard.section.buttons.opts},
-                {type = "padding", val = 5},
-                {type = "footer", val = dashboard.section.footer.val, opts = dashboard.section.footer.opts},
-            }
+            {type = "header",  val = dashboard.section.header.val,  opts = dashboard.section.header.opts},
+            {type = "padding", val = 5},
+            {type = "buttons", val = dashboard.section.buttons.val, opts = dashboard.section.buttons.opts},
+            {
+                type = "padding",
+                val = function(_, remaining)
+                    return remaining
+                end,
+            },
+            {type = "footer",  val = dashboard.section.footer.val,  opts = dashboard.section.footer.opts},
+        }
+        
         alpha.setup(dashboard.opts)
     end
 }

@@ -16,7 +16,7 @@ autocmd('FileType', {
 })
 
 -- Entrar en modo de inserción automáticamente al abrir una terminal
-vim.api.nvim_create_autocmd('TermOpen', {
+autocmd('TermOpen', {
   pattern = '*',
   command = 'silent startinsert',
 })
