@@ -68,6 +68,9 @@ map('n', '<leader>qq', '<cmd>q<CR>')
 --Cerrar todas las sesiones
 map('n', '<leader>qa', '<cmd>qa<CR>')
 
+--Cerrar y guardar
+map('n', '<leader>qw', '<cmd>wq<CR>')
+
 --Manjeo de telescope
 local builtin = require('telescope.builtin')
 map('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
