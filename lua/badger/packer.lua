@@ -81,6 +81,9 @@ return require('packer').startup(function(use)
             'MunifTanjim/nui.nvim',
         }
     }
+    --Which-keys
+    use 'folke/which-key.nvim'
+
     --Alpha-nvim para la pantalla de inicio
 use {
     'goolord/alpha-nvim',
