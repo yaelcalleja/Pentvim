@@ -107,14 +107,14 @@ use {
 
         -- Botones
         dashboard.section.buttons.val = {
-            dashboard.button("n", " Nuevo archivo", ":enew<CR>"),
+            dashboard.button("n", "  Nuevo archivo", ":enew<CR>"),
             dashboard.button("s", "  Buscar un archivo", ":Telescope find_files<CR>"),
             dashboard.button("S", "󰄴  Sincronizar plug-ins", ":PackerSync<CR>"),
             dashboard.button("m", "  Mason para lenguajes de programacion", ":Mason<CR>"),
             dashboard.button("g", "󰊢  Ver cambios de Git", ":Telescope git_status<CR>"),
-            dashboard.button("c", "⚙️   Editar configuración", ":e $MYVIMRC<CR>"),
-            dashboard.button("t", "   Buscar texto en proyecto", ":Telescope live_grep<CR>"),
-            dashboard.button("Space + e", "󰥩 File explorer"),
+            dashboard.button("c", "⚙️ Editar configuración", ":e $MYVIMRC<CR>"),
+            dashboard.button("t", "  Buscar texto en proyecto", ":Telescope live_grep<CR>"),
+            dashboard.button("Space + e", "󰥩  File explorer"),
             dashboard.button("q", "󰈆  Salir", ":qa<CR>"),
         }
         dashboard.section.buttons.opts.hl = 'Function'
