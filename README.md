@@ -5,6 +5,10 @@ Neo-vim config maded to solve some of the usual needs on the code with vim,
 i inspired this project on the need of implement some tools from visualstudio,
 like auto-compile the code or run the code automaticly with only one key combination.
 
+# DISCLAIMER❗❗❗
+
+This repo is maded for pentesting and arch users.
+
 ## Problem to solve
 
 Some nvim config can be more user friendly, but they have to much keybinds and sometimes
@@ -20,7 +24,15 @@ A minimal config with all the essentials for a user.
 
 -`Base-devel`
 
-## Instalation
+## Autoinstalation
+
+Make sure you have git installed on your computer.
+
+```Bash
+bash <(curl -s https://raw.githubusercontent.com/yaelcalleja/Pentvim/main/install.sh)
+```
+
+## Semiautomatic instalation
 
 ```Bash
 git clone https://github.com/yaelcalleja/Pentvim
