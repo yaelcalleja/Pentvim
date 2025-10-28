@@ -4,13 +4,13 @@ return require('packer').startup(function(use)
     -- Packer se autogestiona
     use 'wbthomason/packer.nvim'
 
-    -- Colorscheme: nightfox
+    -- Colorscheme: kanagawa
     use {
-        'EdenEast/nightfox.nvim',
-        as = 'nightfox', -- Cambiado para mayor claridad
+        'Rebelot/kanagawa.nvim',
+        as = 'kanagawa', -- Cambiado para mayor claridad
         config = function()
-            -- El nombre correcto del tema es 'nordfox'
-            vim.cmd('colorscheme nordfox')
+            -- El nombre del tema es kanagawa y dragon es el colorscheme
+            vim.cmd('colorscheme kanagawa-dragon')
         end
     }
 
