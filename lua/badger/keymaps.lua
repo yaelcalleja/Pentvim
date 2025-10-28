@@ -63,13 +63,13 @@ map({'n', 'i'}, '<C-/>', ToggleTerminal, {
 
 --Quitar la sesion con " " q + q
 
-map('n', '<leader>qq', '<cmd>q<CR>')
+map('n', '<leader>qq', '<cmd>q<CR>', {desc = "Cerrar la sesion actual"})
 
 --Cerrar todas las sesiones
-map('n', '<leader>qa', '<cmd>qa<CR>')
+map('n', '<leader>qa', '<cmd>qa<CR>', {desc = "Cerrar todas las sesiones (SIN GUARDAR!!)"})
 
 --Cerrar y guardar
-map('n', '<leader>qw', '<cmd>wq<CR>')
+map('n', '<leader>qw', '<cmd>wq<CR>', {desc = "Cerrar y guardar la sesion actual"})
 
 --Manjeo de telescope
 local builtin = require('telescope.builtin')
@@ -80,3 +80,7 @@ map('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
 --Neo-tree para busqueda de archivos
 map('n', '<leader>e', '<cmd>Neotree toggle<CR>', {desc = 'Abrir/Cerrar Explorador'})
+
+-- Which-key 
+--local builtin = require('which-key.builtin')
+--map('n', '<leader>?', )
