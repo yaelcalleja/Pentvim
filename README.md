@@ -34,6 +34,7 @@ chmod 755 install.sh
 ```
 
 Then just run:
+
 ```Bash
 ./install.sh
 ```
@@ -50,7 +51,7 @@ return require('packer').startup(function(use)
     -- Colorscheme: kanagawa
     use {
         'Rebelot/kanagawa.nvim',
-        as = 'kanagawa', -- Cambiado para mayor claridad
+        as = 'kanagawa',
         config = function()
             -- El nombre del tema es kanagawa y dragon es el colorscheme
             vim.cmd('colorscheme kanagawa-dragon')
@@ -200,7 +201,7 @@ on the carpet /lua/plugins:
 
 -`cmp` For some plugins for bash, python and c++.
 
--`lsp` Support for the installed lenguajes.
+-`lsp` Support for the installed lenguages.
 
 -`lualine` The bot bar for more information and better view.
 
@@ -210,4 +211,31 @@ on the carpet /lua/plugins:
 
 -`treesitter` Give parse and format to the code.
 
+-`which-key` A list of all the keybinds and combination.
 
+### Colorscheme
+
+I use the `rebelot/kanagawa` colorscheme for this nvim, to change it you just need
+to change the colorscheme part on the packet file.
+
+```Lua
+     -- Colorscheme: kanagawa
+use {
+     'Rebelot/kanagawa.nvim',
+      as = 'kanagawa',
+      config = function()
+      -- El nombre del tema es kanagawa y dragon es el colorscheme
+        vim.cmd('colorscheme kanagawa-dragon')
+  end
+}
+```
+
+But i highly recomend to not change it, it's beautifull :).
+
+### Lenguages
+
+This config was maded for python, shell and c++, but you can install any other lenguages
+on the title window with `mason`, you just need to press the `m` and search all the lenguages
+you want to install, if you want to install it just press `i` on the lenguage.
+
+![masson screen shot](/assets/masonss.png)
