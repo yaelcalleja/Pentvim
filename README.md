@@ -15,7 +15,10 @@ A minimal config with all the essentials for a user.
 # Dependencies
 
 -`Vim`
+
 -`Neo-vim`
+
+-`Base-devel`
 
 # Instalation
 
