@@ -213,7 +213,7 @@ on the carpet /lua/plugins:
 
 -`cmp` For some plugins for bash, python and c++.
 
--`lsp` Support for the installed lenguages.
+-`lsp` Support for the installed languages.
 
 -`lualine` The bot bar for more information and better view.
 
@@ -244,10 +244,10 @@ use {
 
 But i highly recomend to not change it, it's beautifull :).
 
-### Lenguages
+### Languages
 
-This config was maded for python, shell and c++, but you can install any other lenguages
+This config was maded for python, shell and c++, but you can install any other languages
 on the title window with `mason`, you just need to press the `m` and search all the lenguages
-you want to install, if you want to install it just press `i` on the lenguage.
+you want to install, if you want to install it just press `i` on the language.
 
 ![masson screen shot](/assets/masonss.png)
