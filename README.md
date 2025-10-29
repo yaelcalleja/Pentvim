@@ -250,4 +250,13 @@ This config was maded for python, shell and c++, but you can install any other l
 on the title window with `mason`, you just need to press the `m` and search all the lenguages
 you want to install, if you want to install it just press `i` on the language.
 
+
 ![masson screen shot](/assets/masonss.png)
+
+
+### Keybinds
+
+Almost all of the keybinds are started with the sapce key, but we don't want you to confuse with 
+all the combination, so for thah we put the `folke/which-key.nvim` plugin to list all the combinations.
+You only have to press space and then the list will be displayed on the right bottom of your pentvim 
+screen.
