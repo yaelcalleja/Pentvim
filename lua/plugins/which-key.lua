@@ -1,0 +1,56 @@
+local whichkey = require('which-key')
+
+ whichkey.setup({
+    preset = "helix",
+    notify = false,
+    icons = {
+    breadcrumb = "»",
+    separator = "➜",
+    group = "+",
+    ellipsis = "…",
+    mappings = true,
+    colors = true,
+    keys = {
+        scroll_down = '<c-d>',
+        scroll_up = '<c-u>',
+    },
+    win = {
+        no_overlap = true,
+        width = 0.5,
+        border = 0.5,
+    },
+    -- used by key format
+    replace = {
+        keys = {
+            Up = " ",
+            Down = " ",
+            Left = " ",
+            Right = " ",
+            C = "󰘴 ",
+            M = "󰘵 ",
+            D = "󰘳 ",
+            S = "󰘶 ",
+            CR = "󰌑 ",
+            Esc = "󱊷 ",
+            ScrollWheelDown = "󱕐 ",
+            ScrollWheelUp = "󱕑 ",
+            NL = "󰌑 ",
+            BS = "󰁮",
+            Space = "󱁐 ",
+            Tab = "󰌒 ",
+            F1 = "󱊫",
+            F2 = "󱊬",
+            F3 = "󱊭",
+            F4 = "󱊮",
+            F5 = "󱊯",
+            F6 = "󱊰",
+            F7 = "󱊱",
+            F8 = "󱊲",
+            F9 = "󱊳",
+            F10 = "󱊴",
+            F11 = "󱊵",
+            F12 = "󱊶",
+        },
+    },
+  },
+})
